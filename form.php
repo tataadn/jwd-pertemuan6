@@ -21,26 +21,6 @@
                         <div class="card-body">
                             <h2 class="text-center">FORM PENDATAAN</h2>
                             <h6 class="text-center">Tugas Pelatihan Junior Web Developer</h6>
-                                <?php
-                                if ($error) {
-                                ?>
-                                <div class="alert alert-danger" role="alert">
-                                    <?php echo $error ?>
-                                </div>
-                                <?php
-                                    header("location:form.php");
-                                }
-                                ?>
-                                <?php
-                                if ($sukses) {
-                                ?>
-                                <div class="alert alert-success" role="alert">
-                                    <?php echo $sukses ?>
-                                </div>
-                                <?php
-                                    header("location:form.php");
-                                }
-                                ?>
                             <form action="" method="POST" class="p-4">
                                 <div class="mb-3">
                                     <label class="form-label">Nama Anda</label>
@@ -48,11 +28,11 @@
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Alamat Anda</label>
-                                    <textarea class="form-control" name="alamat" style="height: 100px"></textarea>
+                                    <textarea class="form-control" name="alamat" style="height: 80px"></textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Tempat Anda</label>
-                                    <textarea class="form-control" name="tempat" style="height: 100px"></textarea>
+                                    <textarea class="form-control" name="tempat" style="height: 80px"></textarea>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label">Jenis Kelamin</label>

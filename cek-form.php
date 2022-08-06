@@ -25,10 +25,5 @@ if (isset($_POST['submit'])) { //untuk create
 
     $sql1   = "insert into form(nama,alamat,tempat,jenis_kelamin,usia) values ('$nama','$alamat','$tempat','$jk','$usia')";
     $q1     = mysqli_query($koneksi, $sql1);
-    if ($q1) {
-        $sukses     = "Berhasil memasukkan data baru";
-    } else {
-        $error      = "Gagal memasukkan data";
-    }
 }
 ?>
